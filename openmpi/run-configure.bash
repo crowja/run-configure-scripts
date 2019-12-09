@@ -9,6 +9,13 @@ prefix="${pkghome}/${pkgname}/${pkgvers}"
 --prefix="${prefix}" \
 --with-zlib=/sw/pkg/zlib/default
 
+##./configure \
+##--prefix="${prefix}" \
+##--with-zlib-libdir=/sw/pkg/zlib/default/lib \
+##--with-lsf=/lsf/10.1 \
+##--with-lsf-libdir=/lsf/10.1/linux3.10-glibc2.17-x86_64/lib
+
+
 if [ $? ]; then
   echo "Now run"
   echo "  make"
